@@ -70,7 +70,7 @@ export function CounterSaleForm({ onSubmit }: CounterSaleFormProps) {
           name="amount"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Amount</FormLabel>
+              <FormLabel>Amount ₹</FormLabel>
               <FormControl>
                 <Input
                   type="number"

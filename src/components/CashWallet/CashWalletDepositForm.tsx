@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -20,7 +19,7 @@ const CashWalletDepositForm = ({ onSubmit }: CashWalletDepositFormProps) => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Simple validation
     const newErrors: Record<string, string> = {};
     if (!date) newErrors.date = "Date is required";
@@ -59,17 +58,26 @@ const CashWalletDepositForm = ({ onSubmit }: CashWalletDepositFormProps) => {
           value={amount}
           onChange={(e) => setAmount(e.target.value)}
         />
-        {errors.amount && <p className="text-sm text-red-500">{errors.amount}</p>}
+        {errors.amount && (
+          <p className="text-sm text-red-500">{errors.amount}</p>
+        )}
       </div>
 
       <div className="space-y-2">
         <Label htmlFor="bankBranch">Outlet </Label>
-        <Input
+        <select
           id="bankBranch"
-          placeholder="Enter bank branch"
+          className="w-full p-2 border border-gray-300 rounded-md"
           value={bankBranch}
           onChange={(e) => setBankBranch(e.target.value)}
-        />
+        >
+          <option value="" disabled>
+            Select an outlet
+          </option>
+          <option value="Outlet 1">Outlet 1</option>
+          <option value="Outlet 2">Outlet 2</option>
+          <option value="Outlet 3">Outlet 3</option>
+        </select>
         {errors.bankBranch && (
           <p className="text-sm text-red-500">{errors.bankBranch}</p>
         )}
