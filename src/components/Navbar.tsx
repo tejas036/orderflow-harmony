@@ -1,6 +1,7 @@
 
 import { Link } from "react-router-dom";
 import { Wallet } from "lucide-react";
+import logo from "../../src/assets/logo.jpg";
 
 const Navbar = () => {
   return (
@@ -9,19 +10,11 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                className="h-8 w-8 mr-2 text-blue-500"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M3 9H21M7 15H17M12 3V21M5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21Z"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                />
-              </svg>
+              <img
+                src={logo}
+                alt="Logo"
+                className="h-8 w-8 mr-2"
+              />
               <span className="font-bold text-xl">MIB, Central Govt
               </span>
             </Link>
