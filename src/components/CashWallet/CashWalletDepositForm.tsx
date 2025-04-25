@@ -51,7 +51,7 @@ const CashWalletDepositForm = ({ onSubmit }: CashWalletDepositFormProps) => {
       </div>
 
       <div className="space-y-2">
-        <Label htmlFor="amount">Amount</Label>
+        <Label htmlFor="amount">Amount ₹</Label>
         <Input
           id="amount"
           type="number"
@@ -63,7 +63,7 @@ const CashWalletDepositForm = ({ onSubmit }: CashWalletDepositFormProps) => {
       </div>
 
       <div className="space-y-2">
-        <Label htmlFor="bankBranch">Bank Branch</Label>
+        <Label htmlFor="bankBranch">Outlet </Label>
         <Input
           id="bankBranch"
           placeholder="Enter bank branch"

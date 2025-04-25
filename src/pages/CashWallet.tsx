@@ -166,7 +166,7 @@ const CashWallet = () => {
           <TabsContent value="cash-collection">
             <Card>
               <CardHeader>
-                <CardTitle>Collect Cash Payment</CardTitle>
+                <CardTitle>Collect Cash Payment </CardTitle>
               </CardHeader>
               <CardContent>
                 <CashCollectionForm onSubmit={handleAddCollection} />

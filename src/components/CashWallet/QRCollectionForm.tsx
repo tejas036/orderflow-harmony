@@ -54,7 +54,7 @@ const QRCollectionForm = () => {
       {!showQR ? (
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="space-y-2">
-            <Label htmlFor="amount">Amount</Label>
+            <Label htmlFor="amount">Amount ₹</Label>
             <Input
               id="amount"
               type="number"

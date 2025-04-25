@@ -256,7 +256,7 @@ export const cashWalletTransactions: CashWalletTransaction[] = [
     id: "cw-" + generateId(),
     date: "2024-04-15",
     type: "deposit",
-    amount: 50000.00,
+    amount: 10000.00,
     reference: "DEP-20240415-001",
     bankBranch: "Central Branch"
   },
@@ -264,7 +264,7 @@ export const cashWalletTransactions: CashWalletTransaction[] = [
     id: "cw-" + generateId(),
     date: "2024-04-16",
     type: "collection",
-    amount: 3500.00,
+    amount: 10000.00,
     customerName: "Local Customer",
     challanNumber: "CH001195"
   },
@@ -272,7 +272,7 @@ export const cashWalletTransactions: CashWalletTransaction[] = [
     id: "cw-" + generateId(),
     date: "2024-04-17",
     type: "collection",
-    amount: 4200.00,
+    amount: 10000.00,
     customerName: "Walk-in Customer",
     challanNumber: "CH001196"
   },
@@ -280,7 +280,7 @@ export const cashWalletTransactions: CashWalletTransaction[] = [
     id: "cw-" + generateId(),
     date: "2024-04-18",
     type: "collection",
-    amount: 2850.00,
+    amount: 10000.00,
     customerName: "Regular Client",
     challanNumber: "CH001197"
   },
@@ -288,7 +288,7 @@ export const cashWalletTransactions: CashWalletTransaction[] = [
     id: "cw-" + generateId(),
     date: "2024-04-22",
     type: "deposit",
-    amount: 25000.00,
+    amount: 10000.00,
     reference: "DEP-20240422-002",
     bankBranch: "North Branch"
   }
@@ -297,9 +297,9 @@ export const cashWalletTransactions: CashWalletTransaction[] = [
 // Cash Wallet Summary
 export const cashWalletSummary: CashWalletSummary = {
   lastDepositDate: "2024-04-22",
-  lastDepositAmount: 25000.00,
-  totalCollectionSinceDeposit: 0.00,
-  balance: 64450.00 // Initial deposit + second deposit - all collections
+  lastDepositAmount: 80000.00,
+  totalCollectionSinceDeposit: 50000.00,
+  balance: 30000.00 // Initial deposit + second deposit - all collections
 };
 
 // Reconciliation Summary
