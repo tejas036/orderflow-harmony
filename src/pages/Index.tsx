@@ -20,7 +20,7 @@ const Index = () => {
       
       <main className="container mx-auto px-4 py-8">
         <div className="flex justify-between items-center mb-6">
-          <h1 className="text-3xl font-bold">Reconciliation Dashboard</h1>
+          <h1 className="text-3xl font-bold">Collection Reconciliation Dashboard</h1>
           <div className="flex items-center space-x-2">
             <span className="text-sm text-gray-500">Last updated: Today, 10:45 AM</span>
             <button className="p-2 rounded-full bg-gray-200 hover:bg-gray-300">

@@ -22,7 +22,8 @@ const Navbar = () => {
                   strokeLinecap="round"
                 />
               </svg>
-              <span className="font-bold text-xl">OrderFlow Harmony</span>
+              <span className="font-bold text-xl">MIB, Central Govt
+              </span>
             </Link>
           </div>
           
